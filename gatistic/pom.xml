@@ -232,19 +232,19 @@
 			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
+		<!--dependency>
         	<groupId>com.mulesoft.muleesb</groupId>
 			<artifactId>mule-core-ee</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency-->
 		<!-- Xml configuration -->
-		<dependency>
+		<!--dependency>
 			<groupId>com.mulesoft.muleesb.modules</groupId>
 			<artifactId>mule-module-spring-config-ee</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency-->
 
 		<!-- Mule Transports -->
 		<dependency>
@@ -339,11 +339,6 @@
 
 	<repositories>
 		<repository>
-			<id>jboss</id>
-			<name>JBoss</name>
-			<url>http://repository.jboss.com/</url>
-		</repository>
-		<repository>
 			<id>mulesoft-releases</id>
 			<name>MuleSoft Releases</name>
 			<url>http://repository.mulesoft.org/releases/</url>
@@ -362,6 +357,22 @@
             <name>CodeHaus Releases</name>
             <url>http://repository.codehaus.org/</url>
         </repository>
+		<repository>
+			<id>mulesoft-snapshots</id>
+			<name>MuleSoft Snapshot Repository</name>
+			<url>https://repository.mulesoft.org/snapshots/</url>
+			<layout>default</layout>
+		</repository>        
+        <repository>
+        	<id>mvnrepository</id>
+        	<name>mvn repository</name>
+        	<url>http://mvnrepository.com/</url>
+        </repository>
+        <repository>
+			<id>jboss</id>
+			<name>JBoss</name>
+			<url>http://repository.jboss.com/</url>
+		</repository>
     </repositories>
 
 </project>
